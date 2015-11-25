@@ -211,11 +211,11 @@ int main(int argc, char **argv )
   
   /* npres = strtol(argv[7],NULL,10); */
 
-  fprintf(stderr,"%d %lf %lf %lf %d\n",nreps, s, h,  pfinal, npres);
+  /* fprintf(stderr,"%d %lf %lf %lf %d\n",nreps, s, h,  pfinal, npres); */
   
       //if( argc > 8 ) seedv[0] = strtol( argv[8] ,NULL,10) ;
   
-  fprintf(stderr,"seed0: %d\n",seedv[0] ) ;
+  /* fprintf(stderr,"seed0: %d\n",seedv[0] ) ; */
   seedv[1] = 27011;
   seedv[2] = 59243 ;
   seed48( seedv);
@@ -229,9 +229,9 @@ int main(int argc, char **argv )
 	popmax = popsizeEN(popChanges, timeChanges, ch, i, npres) ;
       }
 
-  fprintf(stderr, "popmax: %d\n", popmax);
+  /* fprintf(stderr, "popmax: %d\n", popmax); */
   
-  printf("%d\n",nreps);
+  /* printf("%d\n",nreps); */
   
   nsuccess = 0 ;
 
@@ -314,7 +314,8 @@ int main(int argc, char **argv )
 	
 	nsuccess++;
 	
-	if( (nreps > 9) && (nsuccess % (int)(0.1*nreps) == 0 ) ) fprintf(stderr,". ");
+	if( (nreps > 9) && (nsuccess % (int)(0.1*nreps) == 0 ) ) 
+	  fprintf(stderr,". ");
 	
 	printf("#\n");
 
