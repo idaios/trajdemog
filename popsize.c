@@ -118,8 +118,7 @@ int popsizeEN(int *sortedPopChanges, int *sortedTimeChanges, int n, int t, int n
 	  
 	  
 	  pop = sortedPopChanges[i-1];
-	  fprintf(stderr, "pop: %d, i: %d, n: %d\n", pop, i, n);
-
+	  
 	  break;
 	  
 	}	  
@@ -127,10 +126,7 @@ int popsizeEN(int *sortedPopChanges, int *sortedTimeChanges, int n, int t, int n
 
   if( i == n)
     pop = sortedPopChanges[i-1];
-  fprintf(stderr, "pop: %d, i: %d, n: %d, npres: %d\n", pop, i, n, npres);
-
-  fprintf(stderr, "popsize: %d\n", pop);
-
+  
   return pop;
   
 }

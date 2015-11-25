@@ -231,7 +231,7 @@ int main(int argc, char **argv )
 
   /* fprintf(stderr, "popmax: %d\n", popmax); */
   
-  /* printf("%d\n",nreps); */
+  printf("%d\n",nreps); 
   
   nsuccess = 0 ;
 

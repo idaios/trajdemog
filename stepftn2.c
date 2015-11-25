@@ -49,9 +49,9 @@ main(int argc, char **argv )
 
   sscanf(line," %d",&ntrajs);
 
-  printf("%d\n", ntrajs);
+  printf("ntraj: %d\n", ntrajs);
 
-  printf("1\n");
+  printf("npop: 1\n");
 
   fgets( line, 1000, stdin);
 
